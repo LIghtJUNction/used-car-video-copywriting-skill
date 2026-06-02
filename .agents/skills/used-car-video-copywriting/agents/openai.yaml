@@ -1,4 +1,4 @@
 interface:
   display_name: "Used Car Video Copywriting"
   short_description: "Used-car short video scripts"
-  default_prompt: "Generate a structured used-car short-video script in the fixed 线师傅 persona from vehicle facts, target audience, platform, sales constraints, optional Douyin CLI competitor research, and used-car industry language."
+  default_prompt: "Generate a structured 线师傅二手车 short-video script for hard off-road, commercial vehicle, pickup, or practical used-car content using product-driven IP style, vehicle facts, sales constraints, optional Douyin CLI competitor research, and trust-safe industry language."

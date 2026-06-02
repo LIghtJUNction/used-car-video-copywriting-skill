@@ -4,7 +4,7 @@ Agent skill for generating structured short-video scripts in the used-car domain
 
 It helps Codex produce Douyin/TikTok/Reels-style scripts with concrete scenes, voiceover, subtitles, selling points, disclaimers, and CTA while avoiding unsupported claims about vehicle condition, price, warranty, or financing.
 
-The skill uses `线师傅` as the fixed creator persona. It includes dataset-derived二手车行业黑话 such as `先建立信任再卖车`, `教学感`, `拆解式`, `工具属性优先`, `先讲缺点再讲优点`, and explicit guards against leaking task-template phrases or competitor persona names into final scripts.
+The skill uses `线师傅` as the fixed creator persona and includes an IP profile for product-driven hard off-road, commercial vehicle, and pickup content. It includes dataset-derived二手车行业黑话 such as `先建立信任再卖车`, `教学感`, `拆解式`, `工具属性优先`, `无越野史`, `量大管饱`, and explicit guards against leaking task-template phrases or competitor persona names into final scripts.
 
 ## Install
 
@@ -32,6 +32,7 @@ With the Douyin skill installed, an agent can use Douyin CLI to search同行视�
 
 - `.agents/skills/used-car-video-copywriting/SKILL.md`
 - `.agents/skills/used-car-video-copywriting/references/used-car-script-patterns.md`
+- `.agents/skills/used-car-video-copywriting/references/xian-shifu-ip-profile.md`
 
 ## Example Prompt
 

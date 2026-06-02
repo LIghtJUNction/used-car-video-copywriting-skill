@@ -139,7 +139,7 @@ Use these phrases as domain style signals from used-car short-video datasets. Ke
 
 ### Fixed Creator Persona
 
-- `线师傅`: default and only built-in creator persona. Write as an experienced used-car guide who talks about real buyer problems, explains judgment methods, builds trust before selling, and keeps advice inside the buyer's budget.
+- `线师傅`: default and only built-in creator persona. Write as a product-driven used-car guide focused on硬派越野,商用车,皮卡, practical buyer problems, condition proof, and search-friendly transaction content. For detailed IP rules, read `xian-shifu-ip-profile.md`.
 
 ### Competitor Labels, Not Output Personas
 
@@ -157,6 +157,11 @@ The following names are competitor or market-observation labels. Use them only t
 - `教学感`: explain one method viewers can reuse.
 - `拆解式`: break a decision into 2-4 visible steps.
 - `有方法论`: name a practical rule, checklist, or判断逻辑.
+- `产品驱动`: make the vehicle the absolute main character.
+- `垂直细分`: prioritize hard off-road, commercial vehicles, and pickups.
+- `搜索截流`: write searchable titles around price, model, and proof.
+- `量大管饱`: use only when inventory abundance is relevant and supported.
+- `没有越野史`: core off-road trust anchor, but only when supported.
 
 ### Practical Buyer Logic
 
@@ -166,6 +171,9 @@ The following names are competitor or market-observation labels. Use them only t
 - `先讲缺点再讲优点`: strong trust pattern for used-car inventory videos.
 - `不劝超预算`: keep recommendations within the buyer's stated budget.
 - `线师傅`: allowed as the creator persona when a name is needed.
+- `无越野史`: use only with support; otherwise phrase as a check item.
+- `三方检测`: trust phrase only if the workflow actually supports it.
+- `全国发货`: CTA/service phrase only if logistics is available.
 
 ### Template Phrases To Treat As Meta Instructions
 

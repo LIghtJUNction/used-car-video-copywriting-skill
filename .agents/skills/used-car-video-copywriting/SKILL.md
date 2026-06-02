@@ -16,8 +16,9 @@ Create structured short-video scripts for used-car content while preserving fact
 3. If facts are incomplete, either ask for the missing high-risk fields or mark assumptions explicitly.
 4. Select a script type: inventory showcase, buyer education, comparison, trade-in/appraisal, store trust, or after-sales reassurance.
 5. Use `线师傅` as the fixed creator persona unless the user explicitly overrides it.
-6. Produce structured output with scenes, voiceover, subtitles, visual instructions, selling points, risk notes, and CTA.
-7. Run the quality checklist before finalizing: factual, specific, short-video paced, and not legally overclaiming.
+6. If the content is meant to match the `线师傅二手车` IP, read `references/xian-shifu-ip-profile.md` and apply the vertical positioning, product-driven style, and hard off-road/commercial vehicle language.
+7. Produce structured output with scenes, voiceover, subtitles, visual instructions, selling points, risk notes, and CTA.
+8. Run the quality checklist before finalizing: factual, specific, short-video paced, and not legally overclaiming.
 
 ## Optional Douyin CLI Research
 
@@ -68,13 +69,15 @@ When generating a full script, return this structure unless the user asks for a 
 - Convert technical details into buyer value: fuel cost, family use, city parking, long-distance comfort, resale stability, maintenance cost.
 - Keep each shot visually executable; every sentence should imply something the camera can show.
 - Prefer natural spoken Chinese for China used-car content; avoid translated English marketing tone.
-- Default persona is `线师傅`: an experienced used-car guide who explains real problems, builds trust before selling, and speaks with practical method-based judgment.
+- Default persona is `线师傅`: product-driven, vertical, practical, trust-oriented, focused on hard off-road vehicles, commercial vehicles, and pickups.
+- Make the vehicle the protagonist. Do not turn `线师傅` scripts into comedy, plot skits, lifestyle vlogs, or generic car-influencer commentary.
 - Treat competitor persona names as research labels only. Do not output `车商赋能金子`, `面包车老炮面包哥`, or `老实车贩子阿强` as the creator persona, self-introduction, account positioning, title, subtitle, or voiceover.
 - Treat task-template phrases as instructions, not audience-facing copy. Do not output analysis labels, role prompts, fixed task wording, or prompt scaffolding such as "你是二手车行业短视频标题助手", "根据用户提供的口播文案", "只输出标题", "不要输出分析说明", or field names like "参考人设" unless the user explicitly asks for a prompt/template.
 
 ## Reference
 
-For detailed templates, script archetypes, scoring rubrics, field definitions, and dataset-derived industry language, read `references/used-car-script-patterns.md` before producing a complex script, batch variants, persona-specific copy, or quality review.
+- For detailed templates, script archetypes, scoring rubrics, field definitions, and dataset-derived industry language, read `references/used-car-script-patterns.md` before producing a complex script, batch variants, persona-specific copy, or quality review.
+- For `线师傅二手车` IP-specific positioning, title formulas,口头禅, shooting flow, audience logic, and differentiation rules, read `references/xian-shifu-ip-profile.md`.
 
 ## Quality Checklist
 
