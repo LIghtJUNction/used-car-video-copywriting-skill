@@ -1,6 +1,6 @@
 ---
 name: used-car-video-copywriting
-description: Generate structured short-video scripts for used-car sales and used-car industry content. Use when Codex needs to create, rewrite, score, or adapt Douyin/TikTok/Reels-style video copy for second-hand cars, car dealers, inventory showcases, buyer education, trade-in stories, appraisal content, or vehicle deal explanations with fields such as hook, shots, voiceover, subtitles, selling points, risk disclaimers, and call to action.
+description: Generate structured short-video scripts for used-car sales and used-car industry content, optionally using Douyin CLI competitor research. Use when Codex needs to create, rewrite, score, or adapt Douyin/TikTok/Reels-style video copy for second-hand cars, car dealers, inventory showcases, buyer education, trade-in stories, appraisal content, vehicle deal explanations, or competitor-video-informed scripts with fields such as hook, shots, voiceover, subtitles, selling points, risk disclaimers, and call to action.
 ---
 
 # Used Car Video Copywriting
@@ -12,10 +12,35 @@ Create structured short-video scripts for used-car content while preserving fact
 ## Workflow
 
 1. Capture inputs: vehicle facts, audience, platform, tone, video length, target action, and forbidden claims.
-2. If facts are incomplete, either ask for the missing high-risk fields or mark assumptions explicitly.
-3. Select a script type: inventory showcase, buyer education, comparison, trade-in/appraisal, store trust, or after-sales reassurance.
-4. Produce structured output with scenes, voiceover, subtitles, visual instructions, selling points, risk notes, and CTA.
-5. Run the quality checklist before finalizing: factual, specific, short-video paced, and not legally overclaiming.
+2. If the task is for Douyin or China used-car content and competitor context would improve the result, use the optional Douyin CLI research workflow below.
+3. If facts are incomplete, either ask for the missing high-risk fields or mark assumptions explicitly.
+4. Select a script type: inventory showcase, buyer education, comparison, trade-in/appraisal, store trust, or after-sales reassurance.
+5. Produce structured output with scenes, voiceover, subtitles, visual instructions, selling points, risk notes, and CTA.
+6. Run the quality checklist before finalizing: factual, specific, short-video paced, and not legally overclaiming.
+
+## Optional Douyin CLI Research
+
+If the user asks for Douyin-oriented scripts, competitor analysis,同行视频,爆款参考,账号调研, or current market style, use Douyin CLI when available. The companion skill can be installed with:
+
+```bash
+npx skills add LIghtJUNction/douyin -g
+```
+
+Use the installed `douyin-cli`/`douyin` skill first for exact command syntax and authentication requirements. Then search Douyin for relevant used-car competitors, accounts, or videos using queries such as:
+
+- `二手车`
+- `<brand/model> 二手车`
+- `<city> 二手车`
+- `二手车 避坑`
+- `二手车 检测`
+- `二手车 收车`
+
+When using competitor videos:
+
+- Extract reusable patterns: opening hook type, scene order, trust proof, buyer persona, CTA, comment prompts, and repeated objections.
+- Do not copy creator wording, captions, account identity, private data, or unsupported claims.
+- Summarize research as `douyin_research_notes` before generating the final script.
+- If Douyin CLI is unavailable, unauthenticated, rate-limited, or network-blocked, say so briefly and continue from the provided facts and known patterns.
 
 ## Required Output
 
@@ -25,6 +50,7 @@ When generating a full script, return this structure unless the user asks for a 
 - `positioning`: buyer persona, core pain point, and video intent.
 - `facts_used`: list of concrete facts used from the prompt.
 - `missing_facts`: important unknowns that affect trust, pricing, or legality.
+- `douyin_research_notes`: optional notes from Douyin CLI competitor/video search, or `not_used` with reason.
 - `hook_options`: 3 opening hooks, each under 18 Chinese characters when writing Chinese copy.
 - `scene_script`: timecoded scenes with shot, action, voiceover, subtitle, and purpose.
 - `selling_points`: 3-5 supported points tied to buyer needs.

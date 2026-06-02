@@ -12,6 +12,36 @@ Use these fields when asking for facts or normalizing a prompt:
 - `platform`: Douyin, Kuaishou, Xiaohongshu, TikTok, Reels, YouTube Shorts.
 - `goal`: inquiry, store visit, test drive, private message, lead form, education, trust building.
 - `constraints`: forbidden claims, required disclaimers, region, language, tone, duration.
+- `competitor_research`: Douyin CLI search terms, account/video references, observed hooks, repeated objections, and constraints from同行内容.
+
+## Douyin Competitor Research
+
+Use Douyin CLI research when current platform context matters. The goal is not to imitate a specific creator; it is to infer what the market is training viewers to expect.
+
+Recommended search angles:
+
+- Broad category: `二手车`, `二手车避坑`, `二手车检测`, `二手车收车`.
+- Vehicle-specific: `<brand> <model> 二手车`, `<price_band> 二手车推荐`.
+- Audience-specific: `新手买二手车`, `家用二手车`, `通勤二手车`, `年轻人第一台车`.
+- Trust-specific: `二手车检测报告`, `二手车事故车`, `二手车整备`.
+- Dealer positioning: `<city> 二手车`, `二手车商日常`, `二手车交车`.
+
+Observation schema:
+
+- `query`: search keyword.
+- `source_count`: number of videos/accounts inspected.
+- `common_hooks`: recurring opening patterns.
+- `visual_proofs`: what creators show on camera to build trust.
+- `buyer_objections`: repeated concerns in title/caption/comments if available.
+- `cta_patterns`: private message, comment keyword, store visit, test drive, inspection report.
+- `risk_patterns`: overclaims, exaggerated pricing, unsupported condition language to avoid.
+
+Convert research into scripts by:
+
+- Keeping the strongest hook structure but replacing wording and facts.
+- Turning common objections into scene purposes.
+- Using observed visual proof types only when the seller can actually film them.
+- Making the final CTA fit the user's funnel, not the competitor's funnel.
 
 ## Script Archetypes
 
