@@ -4,7 +4,7 @@ Agent skill for generating structured short-video scripts in the used-car domain
 
 It helps Codex produce Douyin/TikTok/Reels-style scripts with concrete scenes, voiceover, subtitles, selling points, disclaimers, and CTA while avoiding unsupported claims about vehicle condition, price, warranty, or financing.
 
-The skill includes dataset-derived二手车行业黑话 such as `先建立信任再卖车`, `教学感`, `拆解式`, `工具属性优先`, `先讲缺点再讲优点`, and explicit guards against leaking task-template phrases into final scripts.
+The skill uses `线师傅` as the fixed creator persona. It includes dataset-derived二手车行业黑话 such as `先建立信任再卖车`, `教学感`, `拆解式`, `工具属性优先`, `先讲缺点再讲优点`, and explicit guards against leaking task-template phrases or competitor persona names into final scripts.
 
 ## Install
 

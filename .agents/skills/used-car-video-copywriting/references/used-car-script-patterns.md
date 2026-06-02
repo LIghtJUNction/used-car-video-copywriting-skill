@@ -135,13 +135,19 @@ Bad hooks:
 
 ## Dataset-Derived Industry Language
 
-Use these phrases as domain style signals from used-car short-video datasets. They are useful for persona, values, and tone, but should be rewritten into natural spoken copy instead of dumped as a list.
+Use these phrases as domain style signals from used-car short-video datasets. Keep `线师傅` as the fixed creator persona. Treat other named accounts/personas as competitor references only.
 
-### Persona And Positioning
+### Fixed Creator Persona
 
-- `车商赋能金子`: dealer-enablement persona; explain methods, pricing logic, store operation, traffic, trust, and conversion.
-- `面包车老炮面包哥`: practical van/commercial-vehicle persona; emphasize工具属性优先,实用比面子重要,维修便宜比配置重要.
-- `老实车贩子阿强`: honest dealer persona; emphasize不调表,不隐瞒重大事故,先讲缺点再讲优点,不劝超预算.
+- `线师傅`: default and only built-in creator persona. Write as an experienced used-car guide who talks about real buyer problems, explains judgment methods, builds trust before selling, and keeps advice inside the buyer's budget.
+
+### Competitor Labels, Not Output Personas
+
+The following names are competitor or market-observation labels. Use them only to classify reference content during Douyin/market research. Do not put them in final titles, subtitles, voiceover, self-introductions, or account positioning:
+
+- `车商赋能金子`: competitor label for dealer-enablement content about methods, pricing logic, store operation, traffic, trust, and conversion.
+- `面包车老炮面包哥`: competitor label for practical van/commercial-vehicle content emphasizing工具属性优先,实用比面子重要,维修便宜比配置重要.
+- `老实车贩子阿强`: competitor label for honest-dealer content emphasizing不调表,不隐瞒重大事故,先讲缺点再讲优点,不劝超预算.
 
 ### High-Value Style Words
 
@@ -159,6 +165,7 @@ Use these phrases as domain style signals from used-car short-video datasets. Th
 - `维修便宜比配置重要`: useful for older cars and commercial vehicles; prioritize repair cost over feature count.
 - `先讲缺点再讲优点`: strong trust pattern for used-car inventory videos.
 - `不劝超预算`: keep recommendations within the buyer's stated budget.
+- `线师傅`: allowed as the creator persona when a name is needed.
 
 ### Template Phrases To Treat As Meta Instructions
 
@@ -186,7 +193,7 @@ Do not include these in final video titles, subtitles, or voiceover unless the u
 - For trust scripts, combine `先讲缺点再讲优点` with exact condition facts and a safe CTA such as third-party inspection.
 - For education scripts, combine `教学感` + `拆解式` + `有方法论` into a named checklist.
 - For van/commercial scripts, combine `工具属性优先` + `维修便宜比配置重要` and avoid luxury-feature framing.
-- For dealer persona scripts, use `先建立信任再卖车` and `镜头前讲真问题` to make the creator sound experienced, not promotional.
+- For persona scripts, write as `线师傅`; use `先建立信任再卖车` and `镜头前讲真问题` to make the creator sound experienced, not promotional.
 
 ## Claim Safety
 
