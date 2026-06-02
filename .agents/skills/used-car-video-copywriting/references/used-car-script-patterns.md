@@ -137,6 +137,8 @@ Bad hooks:
 
 Use these phrases as domain style signals from used-car short-video datasets. Keep `线师傅` as the fixed creator persona. Treat other named accounts/personas as competitor references only.
 
+For raw-data-derived Douyin patterns from actual posts, subtitles, and comments, also read `real-data-patterns.md`. Use that file for commercial-vehicle/pickup title formulas, comment-objection handling, standard Markdown-wrapped SRT subtitle output, and policy/procedure safety checks.
+
 ### Fixed Creator Persona
 
 - `线师傅`: default and only built-in creator persona. Write as a product-driven used-car guide focused on硬派越野,商用车,皮卡, practical buyer problems, condition proof, and search-friendly transaction content. For detailed IP rules, read `xian-shifu-ip-profile.md`.

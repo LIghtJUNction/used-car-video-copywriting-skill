@@ -7,7 +7,7 @@ description: Generate structured short-video scripts for used-car sales and used
 
 ## Overview
 
-Create structured short-video scripts for used-car content while preserving factual constraints and avoiding unsupported promises. Prefer concrete vehicle facts, buyer-use scenarios, visual shot planning, and compliance-safe sales language over generic hype.
+Create structured short-video scripts for used-car content while preserving factual constraints and avoiding unsupported promises. Prefer concrete vehicle facts, buyer-use scenarios, visual shot planning, comment-driven objections, standard SRT subtitles, and compliance-safe sales language over generic hype.
 
 ## Workflow
 
@@ -17,8 +17,10 @@ Create structured short-video scripts for used-car content while preserving fact
 4. Select a script type: inventory showcase, buyer education, comparison, trade-in/appraisal, store trust, or after-sales reassurance.
 5. Use `线师傅` as the fixed creator persona unless the user explicitly overrides it.
 6. If the content is meant to match the `线师傅二手车` IP, read `references/xian-shifu-ip-profile.md` and apply the vertical positioning, product-driven style, and hard off-road/commercial vehicle language.
-7. Produce structured output with scenes, voiceover, subtitles, visual instructions, selling points, risk notes, and CTA.
-8. Run the quality checklist before finalizing: factual, specific, short-video paced, and not legally overclaiming.
+7. For China/Douyin used-car scripts, especially hard off-road, pickup, commercial vehicle, or dealer-reply content, read `references/real-data-patterns.md` and use its dataset-derived title,口播,评论, and CTA patterns.
+8. Produce structured output with scenes, voiceover, subtitles, visual instructions, selling points, risk notes, and CTA.
+9. If the user asks for subtitles, SRT, captions, 剪映/PR-ready output, or an extractable subtitle file, output standard SRT inside a Markdown fenced code block as described in `references/real-data-patterns.md`.
+10. Run the quality checklist before finalizing: factual, specific, short-video paced, and not legally overclaiming.
 
 ## Optional Douyin CLI Research
 
@@ -55,6 +57,7 @@ When generating a full script, return this structure unless the user asks for a 
 - `douyin_research_notes`: optional notes from Douyin CLI competitor/video search, or `not_used` with reason.
 - `hook_options`: 3 opening hooks, each under 18 Chinese characters when writing Chinese copy.
 - `scene_script`: timecoded scenes with shot, action, voiceover, subtitle, and purpose.
+- `srt_subtitles`: when requested, a Markdown fenced code block tagged `srt` that uses standard SRT numbering, `HH:MM:SS,mmm --> HH:MM:SS,mmm` timecodes, subtitle text, and one blank line between subtitle blocks.
 - `selling_points`: 3-5 supported points tied to buyer needs.
 - `risk_disclaimers`: wording that keeps the copy honest.
 - `cta`: one action request, matched to the platform and sales funnel.
@@ -64,25 +67,31 @@ When generating a full script, return this structure unless the user asks for a 
 ## Style Rules
 
 - Use specific, inspectable facts: year, model, mileage, powertrain, trim, ownership, maintenance, accident/flood/fire status, inspection result, price logic, and target buyer.
+- Front-load the buyer's real decision conflict: price/year,手续/报废年限,落户/过户,两驱/四驱,汽油/柴油,维修/油耗,用途是否匹配.
 - Do not invent certifications, accident-free claims, warranty terms, financing terms, or price advantages.
 - Avoid empty slogans such as "车况精品", "闭眼入", "全网最低", "准新车" unless the prompt provides proof and the wording is still defensible.
 - Convert technical details into buyer value: fuel cost, family use, city parking, long-distance comfort, resale stability, maintenance cost.
 - Keep each shot visually executable; every sentence should imply something the camera can show.
 - Prefer natural spoken Chinese for China used-car content; avoid translated English marketing tone.
+- For commercial vehicles and pickups, treat policy/procedure facts as sales facts:年限,报废,手续,落户,过户,年审,高速,蓝牌/C照,车厢尺寸,座位数,载货场景.
 - Default persona is `线师傅`: product-driven, vertical, practical, trust-oriented, focused on hard off-road vehicles, commercial vehicles, and pickups.
 - Make the vehicle the protagonist. Do not turn `线师傅` scripts into comedy, plot skits, lifestyle vlogs, or generic car-influencer commentary.
 - Treat competitor persona names as research labels only. Do not output `车商赋能金子`, `面包车老炮面包哥`, or `老实车贩子阿强` as the creator persona, self-introduction, account positioning, title, subtitle, or voiceover.
 - Treat task-template phrases as instructions, not audience-facing copy. Do not output analysis labels, role prompts, fixed task wording, or prompt scaffolding such as "你是二手车行业短视频标题助手", "根据用户提供的口播文案", "只输出标题", "不要输出分析说明", or field names like "参考人设" unless the user explicitly asks for a prompt/template.
+- Do not copy raw competitor captions, transcript wording, or comment text. Abstract the pattern, then rewrite from the supplied vehicle facts.
 
 ## Reference
 
 - For detailed templates, script archetypes, scoring rubrics, field definitions, and dataset-derived industry language, read `references/used-car-script-patterns.md` before producing a complex script, batch variants, persona-specific copy, or quality review.
 - For `线师傅二手车` IP-specific positioning, title formulas,口头禅, shooting flow, audience logic, and differentiation rules, read `references/xian-shifu-ip-profile.md`.
+- For real raw-data-derived Douyin patterns from posts, subtitles, comments, audience objections, and Markdown-wrapped SRT subtitle output rules, read `references/real-data-patterns.md` before producing Douyin-facing hard off-road, pickup, commercial vehicle, subtitle, or comment-reply scripts.
 
 ## Quality Checklist
 
 - The first 3 seconds state a buyer-relevant conflict, not a vague greeting.
 - The script can be filmed with real vehicle footage and simple dealership shots.
 - Every major claim is traceable to the provided facts or marked as an assumption.
+- Commercial/pickup scripts answer the likely comment questions: price/year,手续/报废年限,能否落户/过户,柴油/汽油,两驱/四驱,油耗/维修, and inspection/logistics boundaries when relevant.
+- Requested subtitle output uses standard SRT syntax inside Markdown, with comma milliseconds and blank lines between blocks.
 - The CTA is singular and concrete.
 - The script includes safety language for price, condition, financing, warranty, and inspection when those facts are uncertain.
