@@ -1,0 +1,4 @@
+interface:
+  display_name: "Used Car Video Copywriting"
+  short_description: "Used-car short video scripts"
+  default_prompt: "Generate a structured used-car short-video script from vehicle facts, target audience, platform, and sales constraints."
