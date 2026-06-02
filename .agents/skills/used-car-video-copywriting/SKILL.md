@@ -67,10 +67,11 @@ When generating a full script, return this structure unless the user asks for a 
 - Convert technical details into buyer value: fuel cost, family use, city parking, long-distance comfort, resale stability, maintenance cost.
 - Keep each shot visually executable; every sentence should imply something the camera can show.
 - Prefer natural spoken Chinese for China used-car content; avoid translated English marketing tone.
+- Treat task-template phrases as instructions, not audience-facing copy. Do not output analysis labels, role prompts, fixed task wording, or prompt scaffolding such as "你是二手车行业短视频标题助手", "根据用户提供的口播文案", "只输出标题", "不要输出分析说明", or field names like "参考人设" unless the user explicitly asks for a prompt/template.
 
 ## Reference
 
-For detailed templates, script archetypes, scoring rubrics, and field definitions, read `references/used-car-script-patterns.md` before producing a complex script, batch variants, or quality review.
+For detailed templates, script archetypes, scoring rubrics, field definitions, and dataset-derived industry language, read `references/used-car-script-patterns.md` before producing a complex script, batch variants, persona-specific copy, or quality review.
 
 ## Quality Checklist
 

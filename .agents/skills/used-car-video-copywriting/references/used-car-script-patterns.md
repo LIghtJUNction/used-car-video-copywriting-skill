@@ -133,6 +133,61 @@ Bad hooks:
 - "闭眼入，放心冲"
 - "准新车，原版原漆" without proof
 
+## Dataset-Derived Industry Language
+
+Use these phrases as domain style signals from used-car short-video datasets. They are useful for persona, values, and tone, but should be rewritten into natural spoken copy instead of dumped as a list.
+
+### Persona And Positioning
+
+- `车商赋能金子`: dealer-enablement persona; explain methods, pricing logic, store operation, traffic, trust, and conversion.
+- `面包车老炮面包哥`: practical van/commercial-vehicle persona; emphasize工具属性优先,实用比面子重要,维修便宜比配置重要.
+- `老实车贩子阿强`: honest dealer persona; emphasize不调表,不隐瞒重大事故,先讲缺点再讲优点,不劝超预算.
+
+### High-Value Style Words
+
+- `先建立信任再卖车`: open with risk, selection logic, or inspection proof before sales language.
+- `内容要有人设和观点`: state a concrete stance, not generic inventory narration.
+- `镜头前讲真问题`: talk about real buyer worries: mileage,事故,调表,泡水,维修费,保值,预算.
+- `教学感`: explain one method viewers can reuse.
+- `拆解式`: break a decision into 2-4 visible steps.
+- `有方法论`: name a practical rule, checklist, or判断逻辑.
+
+### Practical Buyer Logic
+
+- `工具属性优先`: for vans, pickups, cheap commuters, and business-use vehicles, lead with durability, load, maintenance, fuel, and downtime.
+- `实用比面子重要`: frame budget buyers around use-value instead of vanity.
+- `维修便宜比配置重要`: useful for older cars and commercial vehicles; prioritize repair cost over feature count.
+- `先讲缺点再讲优点`: strong trust pattern for used-car inventory videos.
+- `不劝超预算`: keep recommendations within the buyer's stated budget.
+
+### Template Phrases To Treat As Meta Instructions
+
+Do not include these in final video titles, subtitles, or voiceover unless the user explicitly asks for a prompt template:
+
+- `不要输出分析说明`
+- `不要输出`
+- `参考人设`
+- `处事原则`
+- `语气`
+- `价格和金融方案`
+- `你是二手车行业短视频标题助手`
+- `根据用户提供的口播文案`
+- `输出一个适合短视频发布的中文标题`
+- `只输出标题`
+- `不要编造口播文案以外的事故`
+- `你是二手车行业短视频口播文案助手`
+- `根据用户提供的视频标题`
+- `视频详情和账号定位`
+- `推理并输出可直接用于拍摄的中文口播文案`
+- `账号`
+
+### How To Apply The Language
+
+- For trust scripts, combine `先讲缺点再讲优点` with exact condition facts and a safe CTA such as third-party inspection.
+- For education scripts, combine `教学感` + `拆解式` + `有方法论` into a named checklist.
+- For van/commercial scripts, combine `工具属性优先` + `维修便宜比配置重要` and avoid luxury-feature framing.
+- For dealer persona scripts, use `先建立信任再卖车` and `镜头前讲真问题` to make the creator sound experienced, not promotional.
+
 ## Claim Safety
 
 Do:
