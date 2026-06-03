@@ -8,6 +8,8 @@ The skill uses `线师傅` as the fixed creator persona and includes an IP profi
 
 It also includes a real-data pattern reference distilled from local Douyin raw data: post titles/descriptions, ASR subtitle segments, comment objections, and audience intent signals. This improves commercial-vehicle/pickup scripts around price/year questions,手续/报废年限,落户/过户,柴油/汽油,两驱/四驱,维修/油耗, safer CTAs, and Markdown-wrapped standard SRT output for subtitles.
 
+For二手大巴/客车/通勤车 scripts, the skill now favors分享式口播 over preachy hard-sell wording: lead with用途匹配,预算,座位数,城市, then use one platform-safe CTA such as `发预算+座位数+城市`.
+
 ## Install
 
 Install this skill:

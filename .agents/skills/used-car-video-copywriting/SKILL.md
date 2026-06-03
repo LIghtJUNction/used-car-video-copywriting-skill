@@ -7,7 +7,7 @@ description: Generate structured short-video scripts for used-car sales and used
 
 ## Overview
 
-Create structured short-video scripts for used-car content while preserving factual constraints and avoiding unsupported promises. Prefer concrete vehicle facts, buyer-use scenarios, visual shot planning, comment-driven objections, standard SRT subtitles, and compliance-safe sales language over generic hype.
+Create structured short-video scripts for used-car content while preserving factual constraints and avoiding unsupported promises. Prefer concrete vehicle facts, buyer-use scenarios, visual shot planning, comment-driven objections, standard SRT subtitles, and compliance-safe sales language over generic hype. For commercial inquiry scripts, use a sharing/advisory tone instead of preachy or obvious advertising language.
 
 ## Workflow
 
@@ -74,6 +74,8 @@ When generating a full script, return this structure unless the user asks for a 
 - Keep each shot visually executable; every sentence should imply something the camera can show.
 - Prefer natural spoken Chinese for China used-car content; avoid translated English marketing tone.
 - For commercial vehicles and pickups, treat policy/procedure facts as sales facts:年限,报废,手续,落户,过户,年审,高速,蓝牌/C照,车厢尺寸,座位数,载货场景.
+- For bus, coach, van, and other commercial inquiry scripts, avoid lecturing openings such as `别一上来只问便宜不便宜` unless rewritten as a soft shared observation. Use `很多人先看价格，但真正影响后面能不能用的是...` style phrasing to reduce ad smell.
+- When the goal is lead collection on Douyin/short-video platforms, keep the CTA singular and platform-safe: ask for budget, seats, use case, and city; avoid broad marketing words, exaggerated promises, repeated `私信我`, or aggressive conversion language that may trigger platform limiting.
 - Default persona is `线师傅`: product-driven, vertical, practical, trust-oriented, focused on hard off-road vehicles, commercial vehicles, and pickups.
 - Make the vehicle the protagonist. Do not turn `线师傅` scripts into comedy, plot skits, lifestyle vlogs, or generic car-influencer commentary.
 - Treat competitor persona names as research labels only. Do not output `车商赋能金子`, `面包车老炮面包哥`, or `老实车贩子阿强` as the creator persona, self-introduction, account positioning, title, subtitle, or voiceover.
@@ -89,9 +91,11 @@ When generating a full script, return this structure unless the user asks for a 
 ## Quality Checklist
 
 - The first 3 seconds state a buyer-relevant conflict, not a vague greeting.
+- The opening sounds like practical sharing, not a scolding lesson or hard ad.
 - The script can be filmed with real vehicle footage and simple dealership shots.
 - Every major claim is traceable to the provided facts or marked as an assumption.
 - Commercial/pickup scripts answer the likely comment questions: price/year,手续/报废年限,能否落户/过户,柴油/汽油,两驱/四驱,油耗/维修, and inspection/logistics boundaries when relevant.
 - Requested subtitle output uses standard SRT syntax inside Markdown, with comma milliseconds and blank lines between blocks.
 - The CTA is singular and concrete.
+- Commercial inquiry CTAs collect only the minimum matching facts:预算,座位数,用途,城市.
 - The script includes safety language for price, condition, financing, warranty, and inspection when those facts are uncertain.

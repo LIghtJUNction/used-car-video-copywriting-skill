@@ -51,6 +51,15 @@ Good spoken openings:
 - `汽油和柴油怎么选，先看你是家用还是天天拉货。`
 - `这类车适合谁，不适合谁，先说清楚。`
 
+For commercial inquiry videos, soften any scolding hook into a shared observation. The goal is to name the buyer's real worry without sounding like an ad or a lecture.
+
+Rewrite pattern:
+
+- Hard-ad/lecture: `买二手大巴，别一上来只问便宜不便宜。`
+- Softer sharing: `买二手大巴，很多人先看价格，其实更要先看用途能不能匹配。`
+- Subtitle: `买大巴别只看价格`
+- Purpose: capture commercial buyers who worry about budget, seats, route use, reception, and charter work.
+
 ## Standard SRT Output In Markdown
 
 When the user asks for subtitles, SRT, captions, 剪映/PR-ready output, or "输出为 md 方便提取", output a Markdown section containing only one fenced `srt` code block for the subtitle file.
@@ -92,13 +101,35 @@ When generating scripts or comment replies, proactively cover likely comments:
 
 ## Commercial Vehicle Rules
 
-For vans, pickups, light trucks,依维柯,全顺,五十铃,金杯,清障车,工程车:
+For vans, buses, coaches, pickups, light trucks,依维柯,全顺,五十铃,金杯,清障车,工程车:
 
 - Lead with use value:拉货,工程,创业,房车底盘,备用车,单位办公,低成本生产工具.
 - Mention paperwork and limits before features when relevant.
-- Translate specs into workflow value: `5.99米蓝牌` -> license/access convenience if true; `后双轮` -> stability/load confidence; `九座` -> crew transport; `货箱长度` -> loading utility.
+- Translate specs into workflow value: `5.99米蓝牌` -> license/access convenience if true; `后双轮` -> stability/load confidence; `九座` -> crew transport; `货箱长度` -> loading utility; `座位数` ->接送/通勤/包车容量匹配.
 - Use `维修便宜比配置重要` only as a principle, then attach it to an actual powertrain or parts availability fact.
 - Keep comfort claims modest; commercial buyers in the data often challenge image, policy, fuel, and inspection more than seat features.
+
+### Bus And Coach Inquiry Rules
+
+For二手大巴,客车,中巴,通勤车,接送车,旅游包车:
+
+- Lead with matching logic before inventory sales:预算,座位数,用途,城市/落户地,线路强度,营运/非营运需求.
+- Use分享式口播: `如果你正在找一台能跑通接送、通勤或者包车的大巴...` instead of commands like `赶紧私信`.
+- Keep subtitles shorter and search-friendly: `买大巴别只看价格`, `先看用途和座位数`, `发预算+座位数+城市`.
+- CTA should collect one packet of facts: `发预算+座位数+城市+用途`; do not stack multiple calls like关注,点赞,转发,私信,到店.
+- Avoid explicit platform-risky or ad-heavy language such as `广告营销`, `平台限流`, `低价秒杀`, `全网最低`, `包赚钱`, `稳赚`, or repeated direct-sales wording.
+
+Safe example:
+
+```text
+Voiceover: 买二手大巴，很多人先看价格，其实更要先看用途能不能匹配。
+Subtitle: 买大巴别只看价格
+Purpose: 先抓住商用买家的真实顾虑。
+
+Voiceover: 如果你正在找一台能跑接送、通勤或者包车的大巴，把预算、座位数、用途和城市发来，我按实际用途帮你匹配。
+Subtitle: 发预算+座位数+城市
+Purpose: 单一明确转化。
+```
 
 ## Hard Off-Road And Pickup Rules
 
@@ -116,6 +147,7 @@ Prefer one concrete CTA:
 - `想看检测报告，私信车型。`
 - `要落户/过户政策，先发你所在城市。`
 - `想找同类车，发预算和用途。`
+- `找大巴，发预算、座位数、用途和城市。`
 - `要看底盘和手续细节，私信发实拍。`
 - `到店试车前，先确认年份、手续和预算。`
 

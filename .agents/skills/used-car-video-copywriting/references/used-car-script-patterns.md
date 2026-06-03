@@ -156,6 +156,7 @@ The following names are competitor or market-observation labels. Use them only t
 - `先建立信任再卖车`: open with risk, selection logic, or inspection proof before sales language.
 - `内容要有人设和观点`: state a concrete stance, not generic inventory narration.
 - `镜头前讲真问题`: talk about real buyer worries: mileage,事故,调表,泡水,维修费,保值,预算.
+- `分享式口播`: sound like practical matching advice, not a lecture or hard ad; especially useful for commercial buyers who are comparing budget, seats, city policy, and use case.
 - `教学感`: explain one method viewers can reuse.
 - `拆解式`: break a decision into 2-4 visible steps.
 - `有方法论`: name a practical rule, checklist, or判断逻辑.
@@ -203,6 +204,7 @@ Do not include these in final video titles, subtitles, or voiceover unless the u
 - For trust scripts, combine `先讲缺点再讲优点` with exact condition facts and a safe CTA such as third-party inspection.
 - For education scripts, combine `教学感` + `拆解式` + `有方法论` into a named checklist.
 - For van/commercial scripts, combine `工具属性优先` + `维修便宜比配置重要` and avoid luxury-feature framing.
+- For bus/coach inquiry scripts, combine `分享式口播` + `用途匹配` + one narrow CTA such as `发预算+座位数+城市`; do not overuse `私信我` or platform-risky marketing terms.
 - For persona scripts, write as `线师傅`; use `先建立信任再卖车` and `镜头前讲真问题` to make the creator sound experienced, not promotional.
 
 ## Claim Safety
