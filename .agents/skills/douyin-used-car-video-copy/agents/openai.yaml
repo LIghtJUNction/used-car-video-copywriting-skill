@@ -1,0 +1,4 @@
+interface:
+  display_name: "抖音二手车视频文案"
+  short_description: "拆解二手车内容风格，创作原创短视频文案与分镜脚本"
+  default_prompt: "根据我的车辆、客户、城市和真实经历，创作一条原创二手车短视频文案，并给出镜头脚本。"

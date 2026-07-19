@@ -1,6 +1,6 @@
 # Used Car Video Copywriting Skill
 
-Agent skill for generating structured short-video scripts in the used-car domain.
+Agent skills for generating structured short-video scripts and researching content patterns in the used-car domain.
 
 It helps Codex produce Douyin/TikTok/Reels-style scripts with concrete scenes, voiceover, subtitles, selling points, disclaimers, and CTA while avoiding unsupported claims about vehicle condition, price, warranty, or financing.
 
@@ -38,6 +38,8 @@ With the Douyin skill installed, an agent can use Douyin CLI to search同行视�
 - `.agents/skills/used-car-video-copywriting/references/used-car-script-patterns.md`
 - `.agents/skills/used-car-video-copywriting/references/real-data-patterns.md`
 - `.agents/skills/used-car-video-copywriting/references/xian-shifu-ip-profile.md`
+- `.agents/skills/douyin-used-car-video-copy/SKILL.md`
+- `.agents/skills/douyin-used-car-video-copy/references/account-map.md`
 
 ## Example Prompt
 
